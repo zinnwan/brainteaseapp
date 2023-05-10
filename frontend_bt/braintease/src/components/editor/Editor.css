@@ -1,0 +1,331 @@
+@font-face {
+    font-family: handmade;
+    src: url(../../fonts/SimpleHandmade.ttf);
+}
+
+#body-editor {
+    height: max-content;
+    display: grid;
+    /* background-color: #ffffff;
+    background-image: radial-gradient(rgb(8, 17, 43) 3%, transparent 6%);
+    background-size: 40px 40px;
+    background-position: 0 0, 30px 30px;
+    background-repeat: repeat; */
+}
+
+#workplace {
+    display: grid;
+}
+
+.workplace-col {
+    position: relative;
+    left: 10%;
+}
+
+canvas {
+    border-radius: 8px;
+}
+
+.canvas-container {
+    width: 400px;
+    height: 550px;
+}
+
+div#tools {
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+div#tool-bar {
+    position: relative;
+    width: max-content;
+    height: max-content;
+    background-color: white;
+    border-radius: 5px;
+    margin: 5px;
+    top: 10%;
+    left: 10%;
+}
+
+div#props {
+    position: relative;
+    width: 155px;
+    height: max-content;
+    background-color: white;
+    border-radius: 8px;
+    margin: 5px;
+    top: 5%;
+    left: 3%;
+}
+
+.canvas-title {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: 600;
+}
+
+section {
+    padding: 5px;
+}
+
+.prop-sections {
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: small;
+}
+
+div.color-set {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3px;
+}
+
+button.color-set {
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    border: none;
+    background: none;
+    margin: 4px;
+}
+
+input.range {
+    width: 140px;
+    cursor: pointer;
+}
+
+button#transparent {
+    background: repeating-linear-gradient(
+  135deg,
+  #ffffff,
+  #ffffff 3px,
+  #a1a1a1 3px,
+  #a1a1a1 6px
+);
+}
+
+div#radio-container{
+    display: inline-flex;
+    width: 140px;
+    justify-content: center;
+}
+
+#import-img {
+    position: absolute;
+    opacity: 0%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.tool {
+    position: absolute;
+    opacity: 0%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+div.tool-box {
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-solid {
+    top: 50%;
+    position: absolute;
+}
+
+.fa-arrow-pointer {
+    left: 25%;
+}
+.fa-square {
+    left: 15%;
+}
+.fa-t {
+    left: 19%;
+}
+.fa-circle {
+    left: 11%;
+}
+
+.fa-image {
+    left: 10%;
+}
+
+.font-btn {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+button#font-change {
+    font-weight: bolder;
+    font-size: larger;
+}
+
+button#bold {
+    font-size: larger;
+}
+
+div#ft {
+    display: inline-flex;
+    width: 140px;
+    justify-content: center;
+}
+
+input.text-align {
+    width: 30px;
+    height: 30px;
+    opacity: 0%;
+    position: absolute;
+    cursor: pointer;
+}
+
+div#text-align-box {
+    display: inline-flex;
+    width: 140px;
+    justify-content: center;
+}
+
+i.align-icon {
+    position: relative;
+}
+
+label.align-label {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+div.strk-style-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+input.stroke-style {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    opacity: 0%;
+    cursor: pointer;
+}
+
+div.inner-box {
+    width: 18px;
+    height: 18px;
+    border: 2px solid black;
+}
+
+div#dashed {
+    border-style: dashed;
+}
+
+div#dotted {
+    border-style: dotted;
+}
+
+#actions-1 {
+    width: 150px;
+    display: inline-flex;
+}
+
+#actions-2 {
+    width: 150px;
+    display: inline-flex;
+}
+
+div.actions {
+    width: 28px;
+    height: 28px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.actions button {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border: none;
+    opacity: 0%;
+}
+
+i.act {
+    position: relative;
+}
+
+.color-picker {
+    border-style: none;
+    padding: 0;
+    width: 25px;
+    height: 25px;
+    margin: 4px;
+    border-radius: 5px;
+    display: inline-flex;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.input-color {
+    opacity: 0%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+#bg-color {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    border: 0.1rem solid gray;
+}
+
+.rect-tool-icon {
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    border-radius: 8px;
+}
+
+.ellip-tool-icon {
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.text-tool-icon {
+    width: min-content;
+    height: min-content;
+    font-weight: 400;
+    font-size: 30px;
+    color: black;
+    margin: 0px;
+}
+
+div#tti {
+    text-align: center;
+}
+

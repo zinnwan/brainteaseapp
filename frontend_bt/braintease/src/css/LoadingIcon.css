@@ -1,0 +1,43 @@
+.load-icon-cont {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: fit-content;
+    height: 41.25px;
+
+    perspective: 1000px;
+}
+
+.load-icon-card {
+    display: grid;
+
+    transform-style: preserve-3d;
+
+    animation: flipCard 1.5s;
+    animation-iteration-count: infinite;
+}
+
+.load-icon-side {
+    width: 30px;
+    height: 41.25px;
+    border-radius: 5px;
+
+    grid-column: 1;
+    grid-row: 1;
+    backface-visibility: hidden;
+} 
+
+.load-icon-side.front {
+    background-color: #6d79bf;
+}
+
+.load-icon-side.back {
+    background-color: #fad14b;
+    transform: rotateY(180deg);
+}
+
+@keyframes flipCard {
+    0% {transform: rotateY(0deg);}
+    50% {transform: rotateY(180deg);}
+    100% {transform: rotateY(0deg);}
+}

@@ -1,0 +1,51 @@
+.container-flip-card {
+    perspective: 1000px;
+}
+
+.session-card {
+    display: grid;
+
+    transform-style: preserve-3d;
+}
+
+.side {
+    grid-column: 1;
+    grid-row: 1;
+
+    backface-visibility: hidden;
+}
+
+.session-front {}
+
+.session-back {
+    transform: rotateY(180deg);
+}
+
+.card-control {
+    opacity: 0.5;
+    width: 200px;
+    height: 550px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.card-control.left {}
+
+.card-control.right {
+    left: 200px;
+}
+
+
+/* CSSTransition */
+.flip-exit {
+    transform: rotateY(0deg);
+}
+
+.flip-exit-active {
+    transform: rotateY(180deg);
+    transition: transform 500ms;
+}
+
+.flip-exit-done {
+    transform: rotateY(180deg);
+}

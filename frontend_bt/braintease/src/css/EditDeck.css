@@ -1,0 +1,12 @@
+/* Edit Deck Button Container*/
+.eD-btn-cont {
+    display: flex;
+}
+
+/* Edit Deck Button */
+.eD-btn {
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}

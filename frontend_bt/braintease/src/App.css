@@ -1,0 +1,24 @@
+@font-face {
+    font-family: toy box;
+    src: url(./fonts/ToyBox.ttf);
+}
+
+body {
+    background-color: #95A4FF;
+}
+
+.navbrandx {
+    appearance: none;
+    color: white;
+    font-family: toy box;
+    cursor: pointer;
+}
+
+.navbarx {
+    margin-left: 115px;
+}
+
+.nav-location {
+    height: 5px;
+    background-color: white;
+}

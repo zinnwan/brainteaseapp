@@ -1,0 +1,160 @@
+/*
+    sc = showcard -> CardsList.js
+*/
+
+.top-btn, .sc-btn {
+    margin-right: 3px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sc-deck-card {
+    width: 510px;
+    display: grid;
+    float: left;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+.cont-card-btn {
+    float: left;
+    margin: 3px;
+}
+
+.container-card-flip {
+    width: 150px;
+    height: 206.25px;
+
+    perspective: 1000px;
+}
+
+.sc-deck {
+    flex-shrink: 0;
+    grid-row: 1;
+    grid-column: 1;
+    
+}
+
+.sc-session-btn {
+    width: max-content;
+    margin-top: 15px;
+    position: relative;
+    left: 35%;
+}
+
+.deckCover {
+    transform: rotate(-5deg);
+    width: fit-content;
+}
+
+
+.deck-info {
+    width: 295px;
+    height: 407.5px;
+    margin: 3px;
+    padding: 5px;
+    border-radius: 8px;
+    background-color: rgb(230, 230, 230);
+
+    position: relative;
+    left: 30%;
+
+    overflow: auto;
+
+    transform: rotate(5deg);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sc-title {
+    margin: 10px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.sc-desc {
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.content-card {
+    width: max-content;
+    display: grid;
+    
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+.sc-card-btn-cont {
+    margin: 3px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+button.sc-btn {
+    width: 35px;
+    height: 35px;
+}
+
+.cardSide {   
+    grid-row: 1;
+    grid-column: 1;
+
+    backface-visibility: hidden;
+}
+
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.container-card-flip:hover .content-card {
+    transform: rotateY(180deg);
+    transition: transform 1s;
+}
+
+.deckCover:hover {
+    /* box-shadow: rgba(0, 0, 0, 0.16)
+     -10px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06)
+     -2px 0px 0px 1px; */
+    z-index: 1;
+}
+
+
+
+/* .flip-exit {
+    transform: rotateY(0deg);
+}
+
+.flip-exit-active {
+    transform: rotateY(180deg);
+    transition: transform 300ms;
+}
+
+.flip-exit-done {
+    transform: rotateY(180deg);
+}
+
+.flip-enter {
+    transform: rotateY(180deg);
+}
+
+.flip-enter-active {
+    transform: rotateY(0deg);
+    transition: transform 300ms;
+}
+
+.flip-enter-done {
+    transform: rotateY(0deg);
+} */
