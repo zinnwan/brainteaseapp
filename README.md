@@ -27,8 +27,8 @@ each card, in each round is shown.
 ![Javascript React logo](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 
 ### Samples:
-<div display="flex">
-    <img align="center" src="./samples/Screenshot%20from%202023-05-11%2023-51-51.png" alt="sample 0: homepage" height="600"/>
+<div display="flex" align="center">
+    <img src="./samples/Screenshot%20from%202023-05-11%2023-51-51.png" alt="sample 0: homepage" height="600"/>
     <img src="./samples/braintease_sample_1.gif" alt="sample 1: create page" width="500"/>
     <img src="./samples/braintease_sample_2.gif" alt="sample 2: session page" width="500"/>
 </div>
