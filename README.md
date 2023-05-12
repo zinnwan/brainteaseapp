@@ -1,5 +1,10 @@
-![Brain Tease logo](frontend_bt/braintease/public/favicon/android-chrome-512x512.png)
-# Brain Tease
+<!-- ![Brain Tease logo](frontend_bt/braintease/public/favicon/android-chrome-512x512.png)
+# Brain Tease -->
+
+<div align="center">
+    <img src="frontend_bt/braintease/public/favicon/android-chrome-192x192.png" alt="Brain Tease logo" />
+    <h3>Brain Tease</h3>
+</div>
 
 ### Description:
 This project is a flashcards web application. The user can create
